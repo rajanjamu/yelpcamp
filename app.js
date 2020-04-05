@@ -7,5 +7,5 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-    res.send("Homepage");
+    res.render('index');
 });

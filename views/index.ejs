@@ -10,9 +10,10 @@
                 <div class="card">
                     <img src="<%= campground.image %>" class="card-img-top" alt="...">
                     <div class="card-body">
-                    <h5 class="card-title"><%= campground.name %></h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title"><%= campground.name %></h5>
+                        <p class="card-text"><%= campground.description %></p>
+                        <a href="/campgrounds/<%= campground._id %>" class="btn btn-outline-success">More</a>
+                        <a href="/campgrounds/<%= campground._id %>" name="_method" value="delete" class="btn btn-outline-danger"><i class="fas fa-trash"></i></a>
                     </div>
                 </div>
             </div>
@@ -21,4 +22,4 @@
     </div>
 </div>
 
-<%- include('partials/footer') %> 
+<%- include('partials/footer') %>

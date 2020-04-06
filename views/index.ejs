@@ -11,7 +11,7 @@
                     <img src="<%= campground.image %>" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><%= campground.name %></h5>
-                        <p class="card-text"><%= campground.description %></p>
+                        <p class="card-text"><%= `${campground.description.substring(0, 70)}...` %></p>
                         <a href="/campgrounds/<%= campground._id %>" class="btn btn-outline-success">More</a>
                         <a href="/campgrounds/<%= campground._id %>" name="_method" value="delete" class="btn btn-outline-danger"><i class="fas fa-trash"></i></a>
                     </div>

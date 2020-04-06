@@ -2,13 +2,17 @@
 
 <h1 class="text-center mb-5"><%= campground.name %></h1>
 
-<div class="container">
-    <div class="card">
-        <img src="<%= campground.image %>" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title"><%= campground.name %></h5>
-            <p class="card-text"><%= campground.description %></p>
-            <a href="/campgrounds" class="btn btn-outline-success">Go Back</a>
+<div class="container ">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card">
+                <img src="<%= campground.image %>" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><%= campground.name %></h5>
+                    <p class="card-text"><%= campground.description %></p>
+                    <a href="/campgrounds" class="btn btn-outline-success">Go Back</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
